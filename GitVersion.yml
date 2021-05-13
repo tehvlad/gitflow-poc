@@ -12,9 +12,9 @@ tag-prefix: '[vV]'
 major-version-bump-message: '\+semver:\s?(breaking|major)'
 minor-version-bump-message: '\+semver:\s?(feature|minor)'
 patch-version-bump-message: '\+semver:\s?(fix|patch|hotfix)'
-legacy-semver-padding: 4
-build-metadata-padding: 4
-commits-since-version-source-padding: 4
+legacy-semver-padding: 5
+build-metadata-padding: 5
+commits-since-version-source-padding: 5
 commit-message-incrementing: Enabled
 
 
@@ -25,7 +25,7 @@ branches:
     increment: Minor
     tag: ''
     prevent-increment-of-merged-branch-version: true
-    track-merge-target: false
+    track-merge-target: true
     is-release-branch: true
   release:
     regex: release
