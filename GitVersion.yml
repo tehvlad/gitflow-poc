@@ -54,13 +54,14 @@ branches:
   #   tracks-release-branches: false
   #   is-release-branch:  true
   development:
-    regex: development
+    regex: dev(elop)?(ment)?$
     source-branches: ['main']
     mode: ContinuousDeployment
     tag: dev
     increment: Patch
-    prevent-increment-of-merged-branch-version: false
     track-merge-target: true
+    tracks-release-branches: false
+    is-release-branch:  false
   feature:
     regex: feature
     source-branches: ['main']
