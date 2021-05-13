@@ -11,14 +11,14 @@ build-metadata-padding: 0
 commits-since-version-source-padding: 0
 assembly-versioning-scheme: MajorMinorPatch
 assembly-file-versioning-scheme: MajorMinorPatchTag
-assembly-file-versioning-format: '{Major}.{Minor}.{Patch}.{env:BUILD_NUMBER}'
+# assembly-file-versioning-format: '{Major}.{Minor}.{Patch}.{env:BUILD_NUMBER}'
 assembly-informational-format: '{LegacySemVer}'
 branches:
   main:
     regex: main
     increment: Minor
     prevent-increment-of-merged-branch-version: true
-    tag: ''
+    tag: 'main'
     track-merge-target: false
     tracks-release-branches: false
     is-release-branch: false
@@ -27,7 +27,7 @@ branches:
     source-branches: ['main']
     increment: Patch
     prevent-increment-of-merged-branch-version: true
-    tag: 'RC'
+    tag: 'rc'
     track-merge-target: false
     tracks-release-branches: false
     is-release-branch:  true
@@ -45,7 +45,7 @@ branches:
     source-branches: ['main']
     increment: Patch
     prevent-increment-of-merged-branch-version: true
-    tag: ''
+    tag: 'dev'
     track-merge-target: false
     tracks-release-branches: false
     is-release-branch:  true
@@ -54,7 +54,7 @@ branches:
     source-branches: ['main']
     increment: Patch
     prevent-increment-of-merged-branch-version: true
-    tag: ''
+    tag: 'ft'
     track-merge-target: false
     tracks-release-branches: false
     is-release-branch:  true
