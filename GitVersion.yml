@@ -26,7 +26,34 @@ branches:
     source-branches: ['main']
     increment: Patch
     prevent-increment-of-merged-branch-version: true
-    tag: RC
+    tag: 'RC'
+    track-merge-target: false
+    tracks-release-branches: false
+    is-release-branch:  true
+  hotfix:
+    regex: hotfix
+    source-branches: ['main']
+    increment: Patch
+    prevent-increment-of-merged-branch-version: true
+    tag: 'hotfix'
+    track-merge-target: false
+    tracks-release-branches: false
+    is-release-branch:  true
+  development:
+    regex: development
+    source-branches: ['main']
+    increment: Patch
+    prevent-increment-of-merged-branch-version: true
+    tag: ''
+    track-merge-target: false
+    tracks-release-branches: false
+    is-release-branch:  true
+  feature:
+    regex: feature
+    source-branches: ['main']
+    increment: Patch
+    prevent-increment-of-merged-branch-version: true
+    tag: ''
     track-merge-target: false
     tracks-release-branches: false
     is-release-branch:  true
