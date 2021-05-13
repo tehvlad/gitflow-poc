@@ -5,7 +5,7 @@
 # merge-message-formats: {}
 
 next-version: 0.0
-mode: Mainline
+mode: ContinuousDeployment
 legacy-semver-padding: 0
 build-metadata-padding: 0
 commits-since-version-source-padding: 0
