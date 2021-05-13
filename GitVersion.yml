@@ -44,6 +44,8 @@ branches:
     tracks-release-branches: false
     is-release-branch:  true
   hotfix(es)?[/-]:
+    regex: hotfix
+    source-branches: ['main']
     mode: ContinuousDelivery
     tag: hotfix
     increment: Patch
@@ -59,6 +61,8 @@ branches:
   #   tracks-release-branches: false
   #   is-release-branch:  true
   development:
+    regex: development
+    source-branches: ['main']
     mode: ContinuousDeployment
     tag: dev
     increment: Patch
