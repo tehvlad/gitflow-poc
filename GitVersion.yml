@@ -13,6 +13,18 @@ assembly-versioning-scheme: MajorMinorPatch
 assembly-file-versioning-scheme: MajorMinorPatchTag
 # assembly-file-versioning-format: '{Major}.{Minor}.{Patch}.{env:BUILD_NUMBER}'
 assembly-informational-format: '{LegacySemVer}'
+
+tag-prefix: '[vV]'
+continuous-delivery-fallback-tag: ci
+major-version-bump-message: '\+semver:\s?(breaking|major)'
+minor-version-bump-message: '\+semver:\s?(feature|minor)'
+patch-version-bump-message: '\+semver:\s?(fix|patch|hotfix)'
+legacy-semver-padding: 4
+build-metadata-padding: 4
+commits-since-version-source-padding: 4
+commit-message-incrementing: Enabled
+
+
 branches:
   main:
     regex: main
@@ -31,24 +43,31 @@ branches:
     track-merge-target: false
     tracks-release-branches: false
     is-release-branch:  true
-  hotfix:
+  hotfix(es)?[/-]:
     regex: hotfix
     source-branches: ['main']
+    mode: ContinuousDelivery
+    tag: hotfix
     increment: Patch
-    prevent-increment-of-merged-branch-version: true
-    tag: 'hotfix'
+    prevent-increment-of-merged-branch-version: false
     track-merge-target: false
-    tracks-release-branches: false
-    is-release-branch:  true
+  # development:
+  #   regex: development
+  #   source-branches: ['main']
+  #   increment: Patch
+  #   prevent-increment-of-merged-branch-version: true
+  #   tag: 'dev'
+  #   track-merge-target: false
+  #   tracks-release-branches: false
+  #   is-release-branch:  true
   development:
     regex: development
     source-branches: ['main']
+    mode: ContinuousDeployment
+    tag: dev
     increment: Patch
-    prevent-increment-of-merged-branch-version: true
-    tag: 'dev'
-    track-merge-target: false
-    tracks-release-branches: false
-    is-release-branch:  true
+    prevent-increment-of-merged-branch-version: false
+    track-merge-target: true
   feature:
     regex: feature
     source-branches: ['main']
