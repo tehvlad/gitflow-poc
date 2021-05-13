@@ -586,3 +586,44 @@
   "UncommittedChanges": 0,
   "CommitDate": "2021-05-13"
 }
+Multiple branch configurations match the current branch branchName of 'development'. Using the first matching configuration, 'development'. Matching configurations include:'
+ - development
+ - develop'
+Multiple branch configurations match the current branch branchName of 'development'. Using the first matching configuration, 'development'. Matching configurations include:'
+ - development
+ - develop'
+{
+  "Major": 0,
+  "Minor": 1,
+  "Patch": 0,
+  "PreReleaseTag": "dev.50",
+  "PreReleaseTagWithDash": "-dev.50",
+  "PreReleaseLabel": "dev",
+  "PreReleaseLabelWithDash": "-dev",
+  "PreReleaseNumber": 50,
+  "WeightedPreReleaseNumber": 50,
+  "BuildMetaData": null,
+  "BuildMetaDataPadded": "",
+  "FullBuildMetaData": "Branch.development.Sha.f8c3be40e0e7f4fd5d0c49de4145f7548d309ebf",
+  "MajorMinorPatch": "0.1.0",
+  "SemVer": "0.1.0-dev.50",
+  "LegacySemVer": "0.1.0-dev50",
+  "LegacySemVerPadded": "0.1.0-dev00050",
+  "AssemblySemVer": "0.1.0.0",
+  "AssemblySemFileVer": "0.1.0.50",
+  "FullSemVer": "0.1.0-dev.50",
+  "InformationalVersion": "0.1.0-dev50",
+  "BranchName": "development",
+  "EscapedBranchName": "development",
+  "Sha": "f8c3be40e0e7f4fd5d0c49de4145f7548d309ebf",
+  "ShortSha": "f8c3be4",
+  "NuGetVersionV2": "0.1.0-dev00050",
+  "NuGetVersion": "0.1.0-dev00050",
+  "NuGetPreReleaseTagV2": "dev0050",
+  "NuGetPreReleaseTag": "dev0050",
+  "VersionSourceSha": "cc6b271d7db1df77763781e046d8cb3a8206ef59",
+  "CommitsSinceVersionSource": 50,
+  "CommitsSinceVersionSourcePadded": "00050",
+  "UncommittedChanges": 1,
+  "CommitDate": "2021-05-13"
+}
