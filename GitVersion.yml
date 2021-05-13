@@ -1,9 +1,3 @@
-# mode: ContinuousDeployment
-# branches: {}
-# ignore:
-#  sha: []
-# merge-message-formats: {}
-
 next-version: 0.0
 mode: ContinuousDeployment
 legacy-semver-padding: 0
@@ -14,7 +8,7 @@ assembly-file-versioning-scheme: MajorMinorPatchTag
 # assembly-file-versioning-format: '{Major}.{Minor}.{Patch}.{env:BUILD_NUMBER}'
 assembly-informational-format: '{LegacySemVer}'
 tag-prefix: '[vV]'
-continuous-delivery-fallback-tag: ci
+# continuous-delivery-fallback-tag: ci
 major-version-bump-message: '\+semver:\s?(breaking|major)'
 minor-version-bump-message: '\+semver:\s?(feature|minor)'
 patch-version-bump-message: '\+semver:\s?(fix|patch|hotfix)'
