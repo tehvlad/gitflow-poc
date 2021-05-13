@@ -974,3 +974,68 @@
   "UncommittedChanges": 2,
   "CommitDate": "2021-05-13"
 }
+INFO [05/13/21 13:21:53:58] Working directory: /Users/vladimir.bazan/Projects/convivir/gitflow
+INFO [05/13/21 13:21:53:63] Project root is: /Users/vladimir.bazan/Projects/convivir/gitflow/
+INFO [05/13/21 13:21:53:63] DotGit directory is: /Users/vladimir.bazan/Projects/convivir/gitflow/.git
+INFO [05/13/21 13:21:53:67] Begin: Loading version variables from disk cache
+  INFO [05/13/21 13:21:53:67] Cache file /Users/vladimir.bazan/Projects/convivir/gitflow/.git/gitversion_cache/CA4195AE9DE5370A68C771DBEFC322909A069414.yml not found.
+  INFO [05/13/21 13:21:53:67] End: Loading version variables from disk cache (Took: 0.77ms)
+  ERROR [05/13/21 13:21:53:81] An unexpected error occurred:
+YamlDotNet.Core.SemanticErrorException: (Line: 62, Col: 22, Idx: 1542) - (Line: 62, Col: 22, Idx: 1542): While scanning a plain scalar value, found invalid mapping.
+   at YamlDotNet.Core.Parser.ParseNode(Boolean isBlock, Boolean isIndentlessSequence)
+   at YamlDotNet.Core.Parser.ParseBlockMappingValue()
+   at YamlDotNet.Core.Parser.StateMachine()
+   at YamlDotNet.Core.Parser.MoveNext()
+   at YamlDotNet.Serialization.NodeDeserializers.ObjectNodeDeserializer.YamlDotNet.Serialization.INodeDeserializer.Deserialize(IParser parser, Type expectedType, Func`3 nestedObjectDeserializer, Object& value)
+   at YamlDotNet.Serialization.ValueDeserializers.NodeValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   at YamlDotNet.Serialization.ValueDeserializers.AliasValueDeserializer.DeserializeValue(IParser parser, Type expectedType, SerializerState state, IValueDeserializer nestedObjectDeserializer)
+   at YamlDotNet.Serialization.Deserializer.Deserialize(IParser parser, Type type)
+   at YamlDotNet.Serialization.Deserializer.Deserialize[T](IParser parser)
+   at YamlDotNet.Serialization.Deserializer.Deserialize[T](TextReader input)
+   at GitVersion.Configuration.ConfigSerializer.Read(TextReader reader) in D:\a\GitVersion\GitVersion\src\GitVersion.Core\Configuration\ConfigSerializer.cs:line 12
+   at GitVersion.Configuration.ConfigFileLocator.ReadConfig(String workingDirectory) in D:\a\GitVersion\GitVersion\src\GitVersion.Core\Configuration\ConfigFileLocator.cs:line 49
+   at GitVersion.Configuration.ConfigProvider.Provide(String workingDirectory, Config overrideConfig) in D:\a\GitVersion\GitVersion\src\GitVersion.Core\Configuration\ConfigProvider.cs:line 42
+   at GitVersion.Configuration.ConfigProvider.Provide(Config overrideConfig) in D:\a\GitVersion\GitVersion\src\GitVersion.Core\Configuration\ConfigProvider.cs:line 37
+   at GitVersion.GitVersionContextFactory.Create(GitVersionOptions gitVersionOptions) in D:\a\GitVersion\GitVersion\src\GitVersion.Core\Core\GitVersionContextFactory.cs:line 30
+   at GitVersion.GitVersionCoreModule.<>c__DisplayClass0_0.<RegisterTypes>b__1() in D:\a\GitVersion\GitVersion\src\GitVersion.Core\GitVersionCoreModule.cs:line 38
+   at System.Lazy`1.ViaFactory(LazyThreadSafetyMode mode)
+   at System.Lazy`1.ExecutionAndPublication(LazyHelper executionAndPublication, Boolean useDefaultConstructor)
+   at System.Lazy`1.CreateValue()
+   at System.Lazy`1.get_Value()
+   at GitVersion.VersionCalculation.NextVersionCalculator.get_context() in D:\a\GitVersion\GitVersion\src\GitVersion.Core\VersionCalculation\NextVersionCalculator.cs:line 17
+   at GitVersion.VersionCalculation.NextVersionCalculator.FindVersion() in D:\a\GitVersion\GitVersion\src\GitVersion.Core\VersionCalculation\NextVersionCalculator.cs:line 32
+   at GitVersion.GitVersionCalculateTool.CalculateVersionVariables() in D:\a\GitVersion\GitVersion\src\GitVersion.Core\Core\GitVersionCalculateTool.cs:line 52
+   at GitVersion.GitVersionExecutor.RunGitVersionTool(GitVersionOptions gitVersionOptions) in D:\a\GitVersion\GitVersion\src\GitVersion.App\GitVersionExecutor.cs:line 70
+  INFO [05/13/21 13:21:53:81] Attempting to show the current git graph (please include in issue): 
+  INFO [05/13/21 13:21:53:81] Showing max of 100 commits
+  INFO [05/13/21 13:21:53:87] *   424688a 4 hours ago  (HEAD -> main, origin/main)
+|\  
+| * 84986c3 4 hours ago  (origin/release, release)
+| * bf7926a 4 hours ago 
+* | 80143a0 4 hours ago 
+|/  
+* 791446c 4 hours ago 
+* 82f8230 4 hours ago 
+* b8ddfd5 4 hours ago 
+* d35b7eb 4 hours ago  (hotfix)
+* 8002691 14 hours ago 
+* 2624798 15 hours ago 
+* 3161219 15 hours ago 
+*   a2c5d70 2 days ago  (origin/hotfix, origin/feature/testing, origin/development, feature/testing, development)
+|\  
+| *   b6bb0d8 2 days ago 
+| |\  
+| |/  
+|/|   
+* | 9793c98 2 days ago 
+* | 619dc8f 2 days ago 
+| * c9f9860 2 days ago 
+| * 4a69922 2 days ago 
+| * 950c95e 2 days ago 
+|/  
+* bae283d 2 days ago 
+* b6ffa14 2 days ago 
+* 7ad2b8f 2 days ago 
+* d43caa1 2 days ago 
+* cc6b271 2 days ago 
+
