@@ -29,7 +29,7 @@ branches:
     mode: ContinuousDeployment
     regex: main
     increment: Minor
-    prevent-increment-of-merged-branch-version: true
+    prevent-increment-of-merged-branch-version: false
     tag: ''
     track-merge-target: false
     tracks-release-branches: false
