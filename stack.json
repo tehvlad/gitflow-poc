@@ -1061,3 +1061,25 @@ INFO [05/13/21 13:37:36:79] Begin: Loading version variables from disk cache
   INFO [05/13/21 13:37:37:10] End: Using mainline development mode to calculate current version (Took: 26.35ms)
   WARN [05/13/21 13:37:37:15] An error occurred:
 Unable to format AssemblyFileVersioningFormat.  Check your format string: Environment variable BUILD_NUMBER not found and no fallback string provided
+INFO [05/13/21 13:38:12:85] Working directory: /Users/vladimir.bazan/Projects/convivir/gitflow
+INFO [05/13/21 13:38:12:90] Project root is: /Users/vladimir.bazan/Projects/convivir/gitflow/
+INFO [05/13/21 13:38:12:90] DotGit directory is: /Users/vladimir.bazan/Projects/convivir/gitflow/.git
+INFO [05/13/21 13:38:12:94] Begin: Loading version variables from disk cache
+  INFO [05/13/21 13:38:12:94] Cache file /Users/vladimir.bazan/Projects/convivir/gitflow/.git/gitversion_cache/8365AFE4EC2E060AAAD729852FB90C01B44616C5.yml not found.
+  INFO [05/13/21 13:38:12:94] End: Loading version variables from disk cache (Took: 0.91ms)
+  INFO [05/13/21 13:38:13:05] Using latest commit on specified branch
+  INFO [05/13/21 13:38:13:09] Running against branch: main (c424702 main  13/05/2021 13:37:36)
+  INFO [05/13/21 13:38:13:09] Begin: Calculating base versions
+    INFO [05/13/21 13:38:13:10] NextVersion in GitVersion configuration file: 0.0.0 with commit count source External Source
+    INFO [05/13/21 13:38:13:12] Fallback base version: 0.1.0 with commit count source cc6b271d7db1df77763781e046d8cb3a8206ef59
+    INFO [05/13/21 13:38:13:20] Found multiple base versions which will produce the same SemVer (0.1.0), taking oldest source for commit counting (Fallback base version)
+    INFO [05/13/21 13:38:13:20] Base version used: Fallback base version: 0.1.0 with commit count source cc6b271d7db1df77763781e046d8cb3a8206ef59
+  INFO [05/13/21 13:38:13:20] End: Calculating base versions (Took: 115.51ms)
+  INFO [05/13/21 13:38:13:21] 24 commits found between cc6b271 Initial commit and c424702 main  13/05/2021 13:37:36
+  INFO [05/13/21 13:38:13:21] Begin: Using mainline development mode to calculate current version
+    INFO [05/13/21 13:38:13:22] Found possible mainline branches: main, origin/main
+    INFO [05/13/21 13:38:13:23] Choosing main as mainline because it is the current branch
+    INFO [05/13/21 13:38:13:24] 24 commits found between cc6b271 Initial commit and c424702 main  13/05/2021 13:37:36
+  INFO [05/13/21 13:38:13:24] End: Using mainline development mode to calculate current version (Took: 24.03ms)
+  WARN [05/13/21 13:38:13:26] An error occurred:
+Unable to format AssemblyFileVersioningFormat.  Check your format string: Environment variable BUILD_NUMBER not found and no fallback string provided

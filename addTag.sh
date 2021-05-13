@@ -1,6 +1,6 @@
 #!/bin/bash
 
-dt=$(date '+%d/%m/%Y %H:%M:%S');
+dt=$(date '+%d/%m/%Y %H:%M:%S')
 echo "$dt"
 
 dotnet-gitversion >> stack.json
