@@ -140,3 +140,38 @@
   "CommitDate": "2021-05-13"
 }
 
+{
+  "Major": 0,
+  "Minor": 1,
+  "Patch": 0,
+  "PreReleaseTag": "ci.34",
+  "PreReleaseTagWithDash": "-ci.34",
+  "PreReleaseLabel": "ci",
+  "PreReleaseLabelWithDash": "-ci",
+  "PreReleaseNumber": 34,
+  "WeightedPreReleaseNumber": 55034,
+  "BuildMetaData": null,
+  "BuildMetaDataPadded": "",
+  "FullBuildMetaData": "Branch.main.Sha.2767f1761602346a51d7f8989383bd0bc8369863",
+  "MajorMinorPatch": "0.1.0",
+  "SemVer": "0.1.0-ci.34",
+  "LegacySemVer": "0.1.0-ci34",
+  "LegacySemVerPadded": "0.1.0-ci0034",
+  "AssemblySemVer": "0.1.0.0",
+  "AssemblySemFileVer": "0.1.0.34",
+  "FullSemVer": "0.1.0-ci.34",
+  "InformationalVersion": "0.1.0-ci34",
+  "BranchName": "main",
+  "EscapedBranchName": "main",
+  "Sha": "2767f1761602346a51d7f8989383bd0bc8369863",
+  "ShortSha": "2767f17",
+  "NuGetVersionV2": "0.1.0-ci0034",
+  "NuGetVersion": "0.1.0-ci0034",
+  "NuGetPreReleaseTagV2": "ci0034",
+  "NuGetPreReleaseTag": "ci0034",
+  "VersionSourceSha": "cc6b271d7db1df77763781e046d8cb3a8206ef59",
+  "CommitsSinceVersionSource": 34,
+  "CommitsSinceVersionSourcePadded": "0034",
+  "UncommittedChanges": 3,
+  "CommitDate": "2021-05-13"
+}

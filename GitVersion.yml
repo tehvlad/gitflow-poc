@@ -13,7 +13,6 @@ assembly-versioning-scheme: MajorMinorPatch
 assembly-file-versioning-scheme: MajorMinorPatchTag
 # assembly-file-versioning-format: '{Major}.{Minor}.{Patch}.{env:BUILD_NUMBER}'
 assembly-informational-format: '{LegacySemVer}'
-
 tag-prefix: '[vV]'
 continuous-delivery-fallback-tag: ci
 major-version-bump-message: '\+semver:\s?(breaking|major)'
@@ -27,10 +26,11 @@ commit-message-incrementing: Enabled
 
 branches:
   main:
+    mode: ContinuousDeployment
     regex: main
     increment: Minor
     prevent-increment-of-merged-branch-version: true
-    tag: 'main'
+    tag: ''
     track-merge-target: false
     tracks-release-branches: false
     is-release-branch: false
