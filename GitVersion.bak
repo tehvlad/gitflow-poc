@@ -11,7 +11,6 @@ build-metadata-padding: 0
 commits-since-version-source-padding: 0
 assembly-versioning-scheme: MajorMinorPatch
 assembly-file-versioning-scheme: MajorMinorPatchTag
-assembly-file-versioning-format: '{Major}.{Minor}.{Patch}.{env:BUILD_NUMBER}'
 assembly-informational-format: '{LegacySemVer}'
 branches:
   main:

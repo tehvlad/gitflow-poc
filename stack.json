@@ -1039,3 +1039,25 @@ YamlDotNet.Core.SemanticErrorException: (Line: 62, Col: 22, Idx: 1542) - (Line: 
 * d43caa1 2 days ago 
 * cc6b271 2 days ago 
 
+INFO [05/13/21 13:37:36:68] Working directory: /Users/vladimir.bazan/Projects/convivir/gitflow
+INFO [05/13/21 13:37:36:74] Project root is: /Users/vladimir.bazan/Projects/convivir/gitflow/
+INFO [05/13/21 13:37:36:74] DotGit directory is: /Users/vladimir.bazan/Projects/convivir/gitflow/.git
+INFO [05/13/21 13:37:36:79] Begin: Loading version variables from disk cache
+  INFO [05/13/21 13:37:36:80] Cache file /Users/vladimir.bazan/Projects/convivir/gitflow/.git/gitversion_cache/8D4B918CE5E38614D8048BBE8BF5A7F485F71155.yml not found.
+  INFO [05/13/21 13:37:36:80] End: Loading version variables from disk cache (Took: 1.17ms)
+  INFO [05/13/21 13:37:36:91] Using latest commit on specified branch
+  INFO [05/13/21 13:37:36:95] Running against branch: main (5b53b99 main  13/05/2021 13:21:53)
+  INFO [05/13/21 13:37:36:95] Begin: Calculating base versions
+    INFO [05/13/21 13:37:36:96] NextVersion in GitVersion configuration file: 0.0.0 with commit count source External Source
+    INFO [05/13/21 13:37:36:99] Fallback base version: 0.1.0 with commit count source cc6b271d7db1df77763781e046d8cb3a8206ef59
+    INFO [05/13/21 13:37:37:07] Found multiple base versions which will produce the same SemVer (0.1.0), taking oldest source for commit counting (Fallback base version)
+    INFO [05/13/21 13:37:37:07] Base version used: Fallback base version: 0.1.0 with commit count source cc6b271d7db1df77763781e046d8cb3a8206ef59
+  INFO [05/13/21 13:37:37:07] End: Calculating base versions (Took: 116.30ms)
+  INFO [05/13/21 13:37:37:07] 23 commits found between cc6b271 Initial commit and 5b53b99 main  13/05/2021 13:21:53
+  INFO [05/13/21 13:37:37:07] Begin: Using mainline development mode to calculate current version
+    INFO [05/13/21 13:37:37:09] Found possible mainline branches: main, origin/main
+    INFO [05/13/21 13:37:37:09] Choosing main as mainline because it is the current branch
+    INFO [05/13/21 13:37:37:10] 23 commits found between cc6b271 Initial commit and 5b53b99 main  13/05/2021 13:21:53
+  INFO [05/13/21 13:37:37:10] End: Using mainline development mode to calculate current version (Took: 26.35ms)
+  WARN [05/13/21 13:37:37:15] An error occurred:
+Unable to format AssemblyFileVersioningFormat.  Check your format string: Environment variable BUILD_NUMBER not found and no fallback string provided
