@@ -486,12 +486,6 @@
   "UncommittedChanges": 1,
   "CommitDate": "2021-05-13"
 }
-Multiple branch configurations match the current branch branchName of 'development'. Using the first matching configuration, 'development'. Matching configurations include:'
- - development
- - develop'
-Multiple branch configurations match the current branch branchName of 'development'. Using the first matching configuration, 'development'. Matching configurations include:'
- - development
- - develop'
 {
   "Major": 0,
   "Minor": 1,
@@ -527,12 +521,7 @@ Multiple branch configurations match the current branch branchName of 'developme
   "UncommittedChanges": 1,
   "CommitDate": "2021-05-13"
 }
-Multiple branch configurations match the current branch branchName of 'development'. Using the first matching configuration, 'development'. Matching configurations include:'
- - development
- - develop'
-Multiple branch configurations match the current branch branchName of 'development'. Using the first matching configuration, 'development'. Matching configurations include:'
- - development
- - develop'
+
 {
   "Major": 0,
   "Minor": 1,
@@ -566,5 +555,34 @@ Multiple branch configurations match the current branch branchName of 'developme
   "CommitsSinceVersionSource": 47,
   "CommitsSinceVersionSourcePadded": "00047",
   "UncommittedChanges": 2,
+  "PreReleaseTag": "ci.47",
+  "PreReleaseTagWithDash": "-ci.47",
+  "PreReleaseLabel": "ci",
+  "PreReleaseLabelWithDash": "-ci",
+  "PreReleaseNumber": 47,
+  "WeightedPreReleaseNumber": 55047,
+  "BuildMetaData": null,
+  "BuildMetaDataPadded": "",
+  "FullBuildMetaData": "Branch.main.Sha.4170502b33890a204e5a5ce2b57ade13f8050d47",
+  "MajorMinorPatch": "0.1.0",
+  "SemVer": "0.1.0-ci.47",
+  "LegacySemVer": "0.1.0-ci47",
+  "LegacySemVerPadded": "0.1.0-ci0047",
+  "AssemblySemVer": "0.1.0.0",
+  "AssemblySemFileVer": "0.1.0.47",
+  "FullSemVer": "0.1.0-ci.47",
+  "InformationalVersion": "0.1.0-ci47",
+  "BranchName": "main",
+  "EscapedBranchName": "main",
+  "Sha": "4170502b33890a204e5a5ce2b57ade13f8050d47",
+  "ShortSha": "4170502",
+  "NuGetVersionV2": "0.1.0-ci0047",
+  "NuGetVersion": "0.1.0-ci0047",
+  "NuGetPreReleaseTagV2": "ci0047",
+  "NuGetPreReleaseTag": "ci0047",
+  "VersionSourceSha": "cc6b271d7db1df77763781e046d8cb3a8206ef59",
+  "CommitsSinceVersionSource": 47,
+  "CommitsSinceVersionSourcePadded": "0047",
+  "UncommittedChanges": 0,
   "CommitDate": "2021-05-13"
 }
