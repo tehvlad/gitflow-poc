@@ -586,12 +586,6 @@
   "UncommittedChanges": 0,
   "CommitDate": "2021-05-13"
 }
-Multiple branch configurations match the current branch branchName of 'development'. Using the first matching configuration, 'development'. Matching configurations include:'
- - development
- - develop'
-Multiple branch configurations match the current branch branchName of 'development'. Using the first matching configuration, 'development'. Matching configurations include:'
- - development
- - develop'
 {
   "Major": 0,
   "Minor": 1,
@@ -627,6 +621,7 @@ Multiple branch configurations match the current branch branchName of 'developme
   "UncommittedChanges": 1,
   "CommitDate": "2021-05-13"
 }
+<<<<<<< HEAD
 Multiple branch configurations match the current branch branchName of 'development'. Using the first matching configuration, 'development'. Matching configurations include:'
  - development
  - develop'
@@ -634,6 +629,8 @@ Multiple branch configurations match the current branch branchName of 'developme
  - development
  - develop'
 >>>>>>> main
+=======
+>>>>>>> bed0650e8e0fc8ea54338a891a476febf9773351
 {
   "Major": 0,
   "Minor": 1,
