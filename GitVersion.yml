@@ -16,7 +16,7 @@ branches:
     prevent-increment-of-merged-branch-version: true
     track-merge-target: false
     regex: ^main
-    tracks-release-branches: false
+    tracks-release-branches: true
     is-release-branch: false
   release:
     # mode: ContinuousDelivery
