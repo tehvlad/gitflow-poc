@@ -7,7 +7,8 @@ patch-version-bump-message: '\+semver:\s?(fix|patch|hotfix)'
 legacy-semver-padding: 5
 build-metadata-padding: 5
 commits-since-version-source-padding: 5
-commit-message-incrementing: Enabled
+# commit-message-incrementing: Enabled
+assembly-informational-format: '{LegacySemVer}'
 branches:
   main:
     # mode: ContinuousDelivery
@@ -67,7 +68,7 @@ branches:
     is-release-branch: false
   develop:
     mode: ContinuousDeployment
-    tag: unstable
+    tag: dev
     increment: Minor
     prevent-increment-of-merged-branch-version: false
     track-merge-target: true
