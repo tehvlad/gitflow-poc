@@ -1,0 +1,11 @@
+GitVersion.bak
+GitVersion.yml
+GitVersion.yml.bak
+Program.cs
+add.sh
+gitflow.csproj
+obj
+stack.json
+stack.log
+status.json
+test
