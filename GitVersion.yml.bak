@@ -1,0 +1,73 @@
+next-version: 0.0
+mode: ContinuousDeployment
+legacy-semver-padding: 0
+build-metadata-padding: 0
+commits-since-version-source-padding: 0
+assembly-versioning-scheme: MajorMinorPatch
+assembly-file-versioning-scheme: MajorMinorPatchTag
+# assembly-file-versioning-format: '{Major}.{Minor}.{Patch}.{env:BUILD_NUMBER}'
+assembly-informational-format: '{LegacySemVer}'
+tag-prefix: '[vV]'
+# continuous-delivery-fallback-tag: ci
+major-version-bump-message: '\+semver:\s?(breaking|major)'
+minor-version-bump-message: '\+semver:\s?(feature|minor)'
+patch-version-bump-message: '\+semver:\s?(fix|patch|hotfix)'
+legacy-semver-padding: 5
+build-metadata-padding: 5
+commits-since-version-source-padding: 5
+commit-message-incrementing: Enabled
+
+
+branches:
+  main:
+    mode: ContinuousDeployment
+    regex: main
+    increment: Minor
+    tag: ''
+    prevent-increment-of-merged-branch-version: true
+    track-merge-target: true
+    is-release-branch: true
+  release:
+    regex: release
+    source-branches: ['main']
+    increment: Patch
+    prevent-increment-of-merged-branch-version: true
+    tag: 'rc'
+    track-merge-target: false
+    tracks-release-branches: false
+    is-release-branch:  true
+  hotfix(es)?[/-]:
+    regex: hotfix
+    source-branches: ['main']
+    mode: ContinuousDelivery
+    tag: hotfix
+    increment: Patch
+    prevent-increment-of-merged-branch-version: false
+    track-merge-target: false
+  # development:
+  #   regex: development
+  #   source-branches: ['main']
+  #   increment: Patch
+  #   prevent-increment-of-merged-branch-version: true
+  #   tag: 'dev'
+  #   track-merge-target: false
+  #   tracks-release-branches: false
+  #   is-release-branch:  true
+  development:
+    regex: dev(elop)?(ment)?$
+    source-branches: ['main']
+    mode: ContinuousDeployment
+    tag: dev
+    increment: Patch
+    track-merge-target: true
+    tracks-release-branches: false
+    is-release-branch:  false
+  feature:
+    regex: feature
+    source-branches: ['main']
+    increment: Patch
+    prevent-increment-of-merged-branch-version: true
+    tag: 'ft'
+    track-merge-target: false
+    tracks-release-branches: false
+    is-release-branch:  true
