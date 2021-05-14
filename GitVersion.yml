@@ -6,7 +6,7 @@ patch-version-bump-message: '\+semver:\s?(fix|patch|hotfix)'
 legacy-semver-padding: 5
 build-metadata-padding: 5
 commits-since-version-source-padding: 5
-
+commit-message-incrementing: Disabled
 branches:
   main:
     mode: ContinuousDelivery
