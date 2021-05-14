@@ -4,7 +4,7 @@ branches:
   main:
     mode: ContinuousDelivery
     tag: ''
-    increment: Minor
+    increment: Patch
     prevent-increment-of-merged-branch-version: true
     track-merge-target: false
     regex: ^main
@@ -12,7 +12,7 @@ branches:
     is-release-branch: false
   release:
     mode: ContinuousDelivery
-    tag: beta
+    tag: rc
     increment: Patch
     prevent-increment-of-merged-branch-version: true
     track-merge-target: false
