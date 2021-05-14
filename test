@@ -1,2 +1,11 @@
-  PID TTY           TIME CMD
-  602 ttys000    0:01.72 -zsh
+GitVersion.bak
+GitVersion.yml
+GitVersion.yml.bak
+Program.cs
+add.sh
+gitflow.csproj
+obj
+stack.json
+stack.log
+status.json
+test
