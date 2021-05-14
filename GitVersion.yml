@@ -6,6 +6,7 @@ patch-version-bump-message: '\+semver:\s?(fix|patch|hotfix)'
 legacy-semver-padding: 5
 build-metadata-padding: 5
 commits-since-version-source-padding: 5
+assembly-file-versioning-format: '{Major}.{Minor}.{Patch}.{env:BUILD_NUMBER}'
 commit-message-incrementing: Enabled
 branches:
   main:

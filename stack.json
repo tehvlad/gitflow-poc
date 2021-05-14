@@ -1292,3 +1292,21 @@ Multiple branch configurations match the current branch branchName of 'developme
   "UncommittedChanges": 3,
   "CommitDate": "2021-05-14"
 }
+INFO [05/13/21 23:25:48:00] Working directory: /Users/vladimir.bazan/Projects/convivir/gitflow
+INFO [05/13/21 23:25:48:06] Project root is: /Users/vladimir.bazan/Projects/convivir/gitflow/
+INFO [05/13/21 23:25:48:06] DotGit directory is: /Users/vladimir.bazan/Projects/convivir/gitflow/.git
+INFO [05/13/21 23:25:48:11] Begin: Loading version variables from disk cache
+  INFO [05/13/21 23:25:48:11] Cache file /Users/vladimir.bazan/Projects/convivir/gitflow/.git/gitversion_cache/095F66584447D1E7A149F9EB2B0E5E1430D946AE.yml not found.
+  INFO [05/13/21 23:25:48:11] End: Loading version variables from disk cache (Took: 0.99ms)
+  INFO [05/13/21 23:25:48:23] Using latest commit on specified branch
+  INFO [05/13/21 23:25:48:27] Running against branch: main (bae8d06 main 0.1.1 13/05/2021 23:25:02)
+  INFO [05/13/21 23:25:48:28] Begin: Calculating base versions
+    INFO [05/13/21 23:25:48:29] NextVersion in GitVersion configuration file: 0.0.1 with commit count source External Source
+    INFO [05/13/21 23:25:48:32] Fallback base version: 0.1.0 with commit count source cc6b271d7db1df77763781e046d8cb3a8206ef59
+    INFO [05/13/21 23:25:48:44] Found multiple base versions which will produce the same SemVer (0.1.1), taking oldest source for commit counting (Fallback base version)
+    INFO [05/13/21 23:25:48:44] Base version used: Fallback base version: 0.1.0 with commit count source cc6b271d7db1df77763781e046d8cb3a8206ef59
+  INFO [05/13/21 23:25:48:44] End: Calculating base versions (Took: 164.38ms)
+  INFO [05/13/21 23:25:48:45] 72 commits found between cc6b271 Initial commit and bae8d06 main 0.1.1 13/05/2021 23:25:02
+  INFO [05/13/21 23:25:48:47] 72 commits found between cc6b271 Initial commit and bae8d06 main 0.1.1 13/05/2021 23:25:02
+  WARN [05/13/21 23:25:48:51] An error occurred:
+Unable to format AssemblyFileVersioningFormat.  Check your format string: Environment variable BUILD_NUMBER not found and no fallback string provided
