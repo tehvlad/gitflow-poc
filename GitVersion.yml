@@ -9,6 +9,9 @@ build-metadata-padding: 5
 commits-since-version-source-padding: 5
 # commit-message-incrementing: Enabled
 assembly-informational-format: '{LegacySemVer}'
+assembly-versioning-scheme: MajorMinorPatchTag
+assembly-file-versioning-scheme: MajorMinorPatchTag
+
 branches:
   main:
     # mode: ContinuousDelivery
