@@ -5,7 +5,7 @@ branches:
     mode: ContinuousDelivery
     tag: ''
     increment: Minor
-    prevent-increment-of-merged-branch-version: false
+    prevent-increment-of-merged-branch-version: true
     track-merge-target: false
     regex: ^main
     tracks-release-branches: false
@@ -16,7 +16,7 @@ branches:
     increment: Patch
     prevent-increment-of-merged-branch-version: true
     track-merge-target: false
-    regex: ^release?[/-]
+    regex: ^release(s)?[/-]
     tracks-release-branches: false
     is-release-branch: true
     pre-release-weight: 1000
@@ -26,7 +26,7 @@ branches:
     increment: Inherit
     prevent-increment-of-merged-branch-version: false
     track-merge-target: false
-    regex: ^features?[/-]
+    regex: ^feature(s)?[/-]
     tracks-release-branches: false
     is-release-branch: false
   pull-request:
