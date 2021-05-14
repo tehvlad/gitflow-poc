@@ -1,6 +1,6 @@
 next-version: 0.0.1
-# mode: ContinuousDelivery
-mode: GitFlow
+mode: ContinuousDelivery
+# mode: GitFlow
 major-version-bump-message: '\+semver:\s?(breaking|major)'
 minor-version-bump-message: '\+semver:\s?(feature|minor)'
 patch-version-bump-message: '\+semver:\s?(fix|patch|hotfix)'
