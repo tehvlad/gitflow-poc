@@ -1,16 +1,16 @@
 next-version: 0.0.1
-mode: ContinuousDelivery
+# mode: ContinuousDelivery
+mode: GitFlow
 major-version-bump-message: '\+semver:\s?(breaking|major)'
 minor-version-bump-message: '\+semver:\s?(feature|minor)'
 patch-version-bump-message: '\+semver:\s?(fix|patch|hotfix)'
 legacy-semver-padding: 5
 build-metadata-padding: 5
 commits-since-version-source-padding: 5
-assembly-file-versioning-format: '{Major}.{Minor}.{Patch}.{env:BUILD_NUMBER}'
 commit-message-incrementing: Enabled
 branches:
   main:
-    mode: ContinuousDelivery
+    # mode: ContinuousDelivery
     tag: ''
     increment: Minor
     prevent-increment-of-merged-branch-version: true
@@ -19,26 +19,26 @@ branches:
     tracks-release-branches: false
     is-release-branch: false
   release:
-    mode: ContinuousDelivery
+    # mode: ContinuousDelivery
     tag: rc
     increment: Patch
     prevent-increment-of-merged-branch-version: true
     track-merge-target: false
-    regex: ^release(s)?[/-]
+    regex: ^releases?[/-]
     tracks-release-branches: false
     is-release-branch: true
     pre-release-weight: 1000
   feature:
-    mode: ContinuousDelivery
+    # mode: ContinuousDelivery
     tag: useBranchName
     increment: Inherit
     prevent-increment-of-merged-branch-version: false
     track-merge-target: false
-    regex: ^feature(s)?[/-]
+    regex: ^features?[/-]
     tracks-release-branches: false
     is-release-branch: false
   pull-request:
-    mode: ContinuousDelivery
+    # mode: ContinuousDelivery
     tag: PullRequest
     increment: Inherit
     prevent-increment-of-merged-branch-version: false
@@ -48,7 +48,7 @@ branches:
     tracks-release-branches: false
     is-release-branch: false
   hotfix:
-    mode: ContinuousDelivery
+    # mode: ContinuousDelivery
     tag: beta
     increment: Patch
     prevent-increment-of-merged-branch-version: false
@@ -57,7 +57,7 @@ branches:
     tracks-release-branches: false
     is-release-branch: false
   support:
-    mode: ContinuousDelivery
+    # mode: ContinuousDelivery
     tag: ''
     increment: Patch
     prevent-increment-of-merged-branch-version: true
